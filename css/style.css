@@ -13,15 +13,15 @@
     --color-dark-variant: #677483;
     --color-background:#f6f6f9;
 
-    --card-border-radius:2rems;
-    --card-radius-1:0.4rems;
-    --border-radius-2:0.8rems;
-    --border-radius-3:1.2rems;
+    --card-border-radius:2rem;
+    --card-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
 
-    --card-padding:1.8rems;
-    --padding-1:1.2rems;
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
 
-    --box-shadow:0 2rems 3rems var(--color-light);
+    --box-shadow:0 2rem 3rem var(--color-light);
 }
 *{
     margin:  0;
@@ -40,7 +40,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: poppins sans-serif;
-    font-size: 0.88rems;
+    font-size: 0.88rem;
     background: var(--color-background); 
     user-select: none;
     overflow-x: hidden;
@@ -50,8 +50,8 @@ body{
     width: 96%;
     margin: 0 auto;
     /*background: #41f1b6;*/
-    gap: 1.8rems;
-    grid-template-columns: 14rems auto 23rems;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
 }
 a{
     color: var(--color-dark);
@@ -65,23 +65,23 @@ h1{
     font: size 1.8rem;
 }
 h2{
-    font-size: 1.4rems;
+    font-size: 1.4rem;
 }
 h3{
-    font-size: 0,87rems;
+    font-size: 0,87rem;
 }
 h4{
-    font-size: 0.8rems;
+    font-size: 0.8rem;
 }
 h5{
    font-size: 0.75rem; 
 }
 small{
-    font-size: ;
+    font-size:0.75rem ;
 }
 .profile-photo{
     width: 2.8rem;
-    height: 2.8rems;
+    height: 2.8rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -112,4 +112,57 @@ aside{
 }
 aside.top{
     background: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside.logo{
+    display: flex;
+    gap: 0.8rem;
+}
+aside .logo img{
+width: 2rem;
+height: 2rem;
+}
+aside .close{
+display:none;
+}
+
+aside .sidebar{
+background:wheat;
+display: flex;
+flex-direction: column;
+height: 86vh;
+position: relative;
+top: 3rem;
+}
+
+aside h3{
+  font-weight: 500;   
+}
+aside .sidebar a{
+   display: flex;
+   color: var(--color-info-dark); 
+   margin-left: 2rem;
+   gap: 1rem;
+   align-items: center;
+   position: relative;
+   height: 3.7rem;
+   transition: all 300ms ease;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom:2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+background: var(--color-light);
+color: var(--color-primary);
+margin-left:0;
+}
+
+aside .sidebar a.active:before{
+
 }
